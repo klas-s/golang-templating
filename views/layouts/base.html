@@ -1,0 +1,16 @@
+{{define "base"}}
+<!doctype html>
+<html>
+  <head>
+    <title>{{block "title" .}}Untitled{{end}}</title>
+  </head>
+  <body>
+    <header>
+      {{template "partials/nav" .}}
+    </header>
+    <main>
+      {{block "content" .}}Default content{{end}}
+    </main>
+  </body>
+</html>
+{{end}}
